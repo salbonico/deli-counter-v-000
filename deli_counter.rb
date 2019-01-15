@@ -13,7 +13,7 @@ else
     output.push(name)
   end
   line_list = output.join(" ")
-  puts "The Line is currently: #{line_list}"
+  puts "The line is currently: #{line_list}"
 end
 end
 
