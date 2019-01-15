@@ -2,8 +2,18 @@
 katz_deli = []
 
 def line(queue)
+  output = []
+  index = 1
 if queue.size == 0
   puts "The line is currently empty."
+else
+  queue.each do |name|
+    output.push("#{index}.")
+    index += 1
+    output.push(name)
+  end
+  line_list = output.join(" ")
+  puts "The Line is currently: #{line_list}"
 end
 end
 
@@ -19,6 +29,6 @@ if queue.size == 0
 else
   next_person = queue.shift
   puts "Currently serving #{next_person}."
-
 end
+
 end
